@@ -1,4 +1,4 @@
-textFile = open("in", "r")
+textFile = open("1.in", "r")
 numList = []
 
 lines = textFile.readlines()
