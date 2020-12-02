@@ -22,11 +22,14 @@ for line in lines:
 key = 0
 correctPasswords = 0
 for password in passwords:
-    if password[int(keysLow[key]) - 1] == keysLetter[key]:
-        if password[int(keysHigh[key]) - 1] != keysLetter[key]:
+    lowKey = password[int(keysLow[key]) - 1]
+    highKey = password[int(keysHigh[key]) - 1]
+    letter = keysLetter[key]
+    if lowKey == letter:
+        if highKey != letter:
             correctPasswords += 1
-    if password[int(keysHigh[key]) - 1] == keysLetter[key]:
-        if password[int(keysLow[key]) - 1] != keysLetter[key]:
+    if highKey == letter:
+        if lowKey != letter:
             correctPasswords += 1
     key += 1
 print(correctPasswords)
