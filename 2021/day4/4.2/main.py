@@ -80,8 +80,11 @@ for drawNum in drawOrder:
     boardsLogic = boards
     for board in boards:
         if board.winState():
-            print(board.points(drawNum))
-            break
+            if len(boardsLogic) > 1:
+                boardsLogic.remove(board)
+            else:
+                print(board.points(drawNum))
+                break
     else:
         continue
     break
