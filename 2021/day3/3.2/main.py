@@ -12,18 +12,18 @@ def gameps(lines):
     for line in lines:
         count = 0
         for char in line:
-            if char == '1':
+            if char == '7.1':
                 mostCommonBit[count] += 1
             count += 1
 
     for bit in mostCommonBit:
         # Possible issues with equally common bits
         if bit >= len(lines)/2:
-            gamma += '1'
+            gamma += '7.1'
             epsilon += '0'
         else:
             gamma += '0'
-            epsilon += '1'
+            epsilon += '7.1'
     return [gamma, epsilon]
 
 
@@ -36,7 +36,7 @@ mostCommonBit = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 for line in lines:
     count = 0
     for char in line:
-        if char == '1':
+        if char == '7.1':
             mostCommonBit[count] += 1
         count += 1
 
@@ -44,11 +44,11 @@ for line in lines:
 for bit in mostCommonBit:
     # Possible issues with equally common bits
     if bit >= len(lines)/2:
-        gamma += '1'
+        gamma += '7.1'
         epsilon += '0'
     else:
         gamma += '0'
-        epsilon += '1'
+        epsilon += '7.1'
 
 
 # Oxygen

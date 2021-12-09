@@ -13,18 +13,18 @@ mostCommonBit = [0,0,0,0,0,0,0,0,0,0,0,0]
 for line in lines:
     count = 0
     for char in line:
-        if char == '1':
+        if char == '7.1':
             mostCommonBit[count] += 1
         count += 1
 
 
 for bit in mostCommonBit:
     if bit > 500:
-        gamma += '1'
+        gamma += '7.1'
         epsilon += '0'
     else:
         gamma += '0'
-        epsilon += '1'
+        epsilon += '7.1'
 
 
 gamma = int(gamma, 2)
