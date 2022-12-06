@@ -6,3 +6,10 @@ def readFile(filepath):
 
 def reverseString(string):
     return string[::-1]
+
+
+def checkDuplicates(listToCheck):
+    if len(listToCheck) == len(set(listToCheck)):
+        return False
+    else:
+        return True
